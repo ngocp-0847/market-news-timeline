@@ -1,0 +1,172 @@
+# Market News Timeline Configuration
+
+rss_feeds:
+  # US Financial News
+  cnbc:
+    url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    region: "US"
+    name: "CNBC Top News"
+
+  reuters:
+    url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best"
+    region: "Global"
+    name: "Reuters Business"
+
+  yahoo:
+    url: "https://finance.yahoo.com/news/rssindex"
+    region: "US"
+    name: "Yahoo Finance"
+
+  marketwatch:
+    url: "https://feeds.marketwatch.com/marketwatch/topstories/"
+    region: "US"
+    name: "MarketWatch"
+
+  # Europe
+  bbc_business:
+    url: "https://feeds.bbci.co.uk/news/business/rss.xml"
+    region: "UK"
+    name: "BBC Business"
+
+  dw_business:
+    url: "https://rss.dw.com/rdf/rss-en-bus"
+    region: "Germany"
+    name: "DW Business"
+
+  euronews:
+    url: "https://www.euronews.com/rss"
+    region: "EU"
+    name: "Euronews"
+
+  ecb:
+    url: "https://www.ecb.europa.eu/rss/press.html"
+    region: "EU"
+    name: "ECB Press"
+
+  dw_europe:
+    url: "https://rss.dw.com/rdf/rss-en-eu"
+    region: "EU"
+    name: "DW Europe"
+
+  # China / Asia
+  scmp:
+    url: "https://www.scmp.com/rss/5/feed"
+    region: "China"
+    name: "South China Morning Post"
+
+# News classification keywords
+categories:
+  geopolitical:
+    keywords:
+      - "iran"
+      - "hormuz"
+      - "war"
+      - "military"
+      - "conflict"
+      - "sanctions"
+      - "missile"
+      - "strike"
+      - "troops"
+      - "ceasefire"
+      - "diplomacy"
+      - "nato"
+      - "middle east"
+    color: "#e74c3c"
+    marker: "v"
+
+  monetary:
+    keywords:
+      - "fed"
+      - "interest rate"
+      - "rate hike"
+      - "rate cut"
+      - "inflation"
+      - "fomc"
+      - "monetary policy"
+      - "central bank"
+      - "pboc"
+      - "ecb"
+      - "treasury"
+      - "bond yield"
+    color: "#3498db"
+    marker: "^"
+
+  trade:
+    keywords:
+      - "tariff"
+      - "trade war"
+      - "export"
+      - "import"
+      - "trade deal"
+      - "wto"
+      - "supply chain"
+      - "customs"
+      - "liberation day"
+    color: "#f39c12"
+    marker: "s"
+
+  energy:
+    keywords:
+      - "oil"
+      - "brent"
+      - "crude"
+      - "opec"
+      - "natural gas"
+      - "lng"
+      - "energy"
+      - "petroleum"
+      - "refinery"
+    color: "#2ecc71"
+    marker: "D"
+
+  tech:
+    keywords:
+      - "ai"
+      - "artificial intelligence"
+      - "semiconductor"
+      - "chip"
+      - "tech stock"
+      - "nvidia"
+      - "apple"
+      - "microsoft"
+      - "ipo"
+      - "spacex"
+    color: "#9b59b6"
+    marker: "o"
+
+  china_economy:
+    keywords:
+      - "china gdp"
+      - "china growth"
+      - "chinese economy"
+      - "beijing"
+      - "yuan"
+      - "renminbi"
+      - "shanghai"
+      - "hang seng"
+      - "csi 300"
+      - "property"
+      - "evergrande"
+    color: "#e67e22"
+    marker: "P"
+
+# VNIndex settings
+market:
+  symbol: "VNINDEX"
+  days_lookback: 90
+  timezone: "Asia/Ho_Chi_Minh"
+
+# Chart settings
+chart:
+  figsize: [20, 12]
+  style: "whitegrid"
+  dpi: 150
+  title: "VNIndex Timeline với Sự kiện Tin tức Toàn cầu"
+  output_dir: "output"
+  output_filename: "vnindex_news_timeline.png"
+
+  # Annotation settings
+  max_annotations: 25
+  annotation_fontsize: 7
+  price_line_color: "#2c3e50"
+  price_line_width: 2.5
