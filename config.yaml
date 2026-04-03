@@ -7,11 +7,6 @@ rss_feeds:
     region: "US"
     name: "CNBC Top News"
 
-  reuters:
-    url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best"
-    region: "Global"
-    name: "Reuters Business"
-
   yahoo:
     url: "https://finance.yahoo.com/news/rssindex"
     region: "US"
@@ -28,25 +23,46 @@ rss_feeds:
     region: "UK"
     name: "BBC Business"
 
+  guardian_business:
+    url: "https://www.theguardian.com/uk/business/rss"
+    region: "UK"
+    name: "The Guardian Business"
+
   dw_business:
     url: "https://rss.dw.com/rdf/rss-en-bus"
     region: "Germany"
     name: "DW Business"
 
-  euronews:
-    url: "https://www.euronews.com/rss"
+  dw_europe:
+    url: "https://rss.dw.com/rdf/rss-en-eu"
     region: "EU"
-    name: "Euronews"
+    name: "DW Europe"
+
+  dw_world:
+    url: "https://rss.dw.com/rdf/rss-en-world"
+    region: "Global"
+    name: "DW World"
+
+  euronews:
+    url: "https://www.euronews.com/rss?level=theme&name=business"
+    region: "EU"
+    name: "Euronews Business"
+
+  france24:
+    url: "https://www.france24.com/en/business/rss"
+    region: "France"
+    name: "France 24 Business"
 
   ecb:
     url: "https://www.ecb.europa.eu/rss/press.html"
     region: "EU"
     name: "ECB Press"
 
-  dw_europe:
-    url: "https://rss.dw.com/rdf/rss-en-eu"
-    region: "EU"
-    name: "DW Europe"
+  # Middle East
+  aljazeera:
+    url: "https://www.aljazeera.com/xml/rss/all.xml"
+    region: "Middle East"
+    name: "Al Jazeera"
 
   # China / Asia
   scmp:
